@@ -4,12 +4,21 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "dev": "yarn run docs:dev",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "@iconify/json": "^1.1.355",
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vueuse/core": "^5.0.3",
     "sass": "^1.34.1",
+    "vite-plugin-components": "^0.11.1",
+    "vite-plugin-icons": "^0.6.2",
     "vitepress": "^0.14.1"
+  },
+  "dependencies": {
+    "@iconify/iconify": "^2.0.1"
   }
 }
