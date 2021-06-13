@@ -1,15 +1,15 @@
 // vite.config.js
+import { UserConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import ViteComponents from 'vite-plugin-components'
 import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
 
-export default {
+const config: UserConfig = {
   plugins: [
     Vue(),
     ViteComponents({
       extensions: ['vue', 'md'],
       globalComponentsDeclaration: true,
-      customLoaderMatcher: path => path.endsWith('.md'),
       customComponentResolvers: ViteIconsResolver({
         componentPrefix: '',
       }),
@@ -17,3 +17,5 @@ export default {
     ViteIcons()
   ],
 };
+
+export default config

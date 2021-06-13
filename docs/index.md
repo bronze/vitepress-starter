@@ -1,8 +1,6 @@
 https://euangoddard.github.io/clipboard2markdown/
 
-
-1<toggleTheme />2
-
+<DarkModeSwitch />
 # TTB Overview
 
 

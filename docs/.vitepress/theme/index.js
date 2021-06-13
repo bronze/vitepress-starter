@@ -1,10 +1,10 @@
 import DefaultTheme from 'vitepress/theme'
-import toggleTheme from '../../components/toggleTheme.vue'
+import DarkModeSwitch from './components/DarkModeSwitch.vue'
 
 
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
-    app.component('toggleTheme', toggleTheme)
+    app.component('DarkModeSwitch', DarkModeSwitch)
   }
 }
